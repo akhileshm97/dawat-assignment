@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="./styles/modern-css-reset.min.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="./styles/base.css" />
+		<link rel="stylesheet" type="text/css" href="./styles/utilities.css" />
+		<link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script type="text/javascript" src="./index.js" defer></script>
+
+		<title>Dawat Restaurant</title>
+	</head>
+
+	<body>
+		<header id="primary-header">
+			<div class="top">
+				<dl>
+					<div>
+						<dt>Email id:</dt>
+						<dd>info@restaurant.com</dd>
+					</div>
+					<div>
+						<dt>Telephone:</dt>
+						<dd>+1800 234 5678</dd>
+					</div>
+				</dl>
+
+				<div class="flex-row-center">
+					<ul role="list" class="flex-row-center contact-links">
+						<li>
+							<a href="#"><img src="./images/icons/facebook.svg" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="./images/icons/twitter.svg" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="./images/icons/googleplus.svg" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="./images/icons/pinterest.svg" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="./images/icons/skype.svg" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="./images/icons/behance.svg" /></a>
+						</li>
+					</ul>
+					<a href="#" class="action-link book-table">Book a table</a>
+				</div>
+			</div>
+
+			<hr />
+
+			<div class="bottom">
+				<a href="#" id="logo">
+					<img src="./images/main_logo.png" />
+				</a>
+				<nav id="primary-navigation" aria-expanded="false">
+					<ul role="list" class="flex-row-center">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#our-story">About us</a></li>
+						<li><a href="#special-package">Offers</a></li>
+						<li><a href="#menu">Menu</a></li>
+						<li><a href="#our-chefs">Team</a></li>
+						<li><a href="#latest-news">Blog</a></li>
+						<li><a href="#gallery">Gallery</a></li>
+						<li><a href="#primary-footer">Contact</a></li>
+					</ul>
+				</nav>
+
+				<button
+					type="button"
+					aria-controls="primary-navigation"
+					id="menu-toggle"
+					data-open="false"
+				>
+					<span class="sr-only">Menu</span>
+					<span class="hamburger-icon" aria-hidden="true">&#9776;</span>
+					<span class="close-icon" aria-hidden="true">&#128473;</span>
+				</button>
+				<!-- 				<form>
+					<label for="search-field">&#128269;</label>
+					<div class="search-x">
+						<input type="search" name="search" id="search-field" />
+						<button type="submit">Search</button>
+					</div>
+				</form> -->
+			</div>
+		</header>
+
+		<main>
+			<section id="hero">
+				<div
+					role="tabpanel"
+					data-selected="true"
+					id="screen-1"
+					class="flex-column-center flow opaque-background"
+				>
+					<h1>Welcome To</h1>
+					<p class="sub-heading">Dawat Cafe & Restaurant</p>
+					<a href="#" class="action-link">Reservation now</a>
+				</div>
+
+				<div
+					role="tabpanel"
+					data-selected="false"
+					id="screen-2"
+					class="flex-column-center flow opaque-background"
+				>
+					<h1>Our Menus</h1>
+					<p class="sub-heading">See what's new today</p>
+					<a href="#" class="action-link">Today's menu</a>
+				</div>
+
+				<div
+					role="tabpanel"
+					data-selected="false"
+					id="screen-3"
+					class="flex-column-center flow opaque-background"
+				>
+					<h1>Get Ready</h1>
+					<p class="sub-heading">To join with us</p>
+					<a href="#" class="action-link">Book a table</a>
+				</div>
+
+				<ul role="tablist" class="flex-row-center interactive-tabs">
+					<li>
+						<button
+							role="tab"
+							aria-selected="true"
+							aria-controls="screen-1"
+							tabindex="0"
+						>
+							<span class="sr-only">Menu 1</span>
+						</button>
+					</li>
+					<li>
+						<button role="tab" aria-controls="screen-2" tabindex="-1">
+							<span class="sr-only">Menu 2</span>
+						</button>
+					</li>
+					<li>
+						<button role="tab" aria-controls="screen-3" tabindex="-1">
+							<span class="sr-only">Menu 3</span>
+						</button>
+					</li>
+				</ul>
+			</section>
+
+			<section id="our-story">
+				<h2>Our Story</h2>
+				<div class="flex-row-center story-columns">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+						aliquip ex ea commodo consequat. Duis aute irure dolor in
+						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+						culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+						aliquip ex ea commodo consequat. Duis aute irure dolor in
+						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+						culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+				<img src="../images/about_sign.png" />
+			</section>
+
+			<section id="special-package" class="opaque-background">
+				<h2>Special Package</h2>
+				<img src="../images/red seperator.png" class="mlr-auto" />
+				<div class="promo-slideshow">
+					<article role="tabpanel" data-selected="true" id="promo1">
+						<img src="../images/promo_slide_1.jpg" />
+						<div class="flow">
+							<h3>40% off for 9" - 12" pizza - Wed, Thu, Friday only</h3>
+							<p>Pizza 12 inch + 1 Side Dish + 1.5L Coke Bottle Only</p>
+							<p>From 209, 000</p>
+							<a href="#" class="action-link">Order now</a>
+						</div>
+					</article>
+					<article role="tabpanel" data-selected="false" id="promo2">
+						<img src="../images/promo_slide_2.jpg" />
+						<div class="flow">
+							<h3>20% off for 6" - 17" pizza - Mon, Thu only</h3>
+							<p>Pizza 7 inch + 1 Side Dish + 1L Coke Bottle Only</p>
+							<p>From 109, 000</p>
+							<a href="#" class="action-link">Order now</a>
+						</div>
+					</article>
+					<article role="tabpanel" data-selected="false" id="promo3">
+						<img src="../images/promo_slide_3.jpg" />
+						<div class="flow">
+							<h3>30% off for 8" - 9" pizza - Tue, Wed, Saturdau only</h3>
+							<p>Pizza 9 inch + 1 Side Dish + 1.5L Pepsi Bottle Only</p>
+							<p>From 159, 000</p>
+							<a href="#" class="action-link">Order now</a>
+						</div>
+					</article>
+				</div>
+
+				<ul role="tablist" class="flex-row-center interactive-tabs dots">
+					<li>
+						<button
+							role="tab"
+							aria-selected="true"
+							aria-controls="promo1"
+							tabindex="0"
+						>
+							<span class="sr-only">Promo 1</span>
+						</button>
+					</li>
+					<li>
+						<button role="tab" aria-controls="promo2" tabindex="-1">
+							<span class="sr-only">Promo 2</span>
+						</button>
+					</li>
+					<li>
+						<button role="tab" aria-controls="promo3" tabindex="-1">
+							<span class="sr-only">Promo 3</span>
+						</button>
+					</li>
+				</ul>
+			</section>
+
+			<section id="menu" class="flex-column-center">
+				<h2>Today's Menu</h2>
+				<img src="../images/red seperator.png" />
+
+				<ul
+					role="tablist"
+					class="flex-row-center interactive-tabs menu-buttons"
+				>
+					<li>
+						<button
+							role="tab"
+							aria-selected="true"
+							aria-controls="allmenus"
+							tabindex="0"
+						>
+							All
+						</button>
+					</li>
+					<li>
+						<button role="tab" aria-controls="breakfast" tabindex="-1">
+							Breakfast
+						</button>
+					</li>
+					<li>
+						<button role="tab" aria-controls="lunch" tabindex="-1">
+							Lunch
+						</button>
+					</li>
+					<li>
+						<button role="tab" aria-controls="dinner" tabindex="-1">
+							Dinner
+						</button>
+					</li>
+					<li>
+						<button role="tab" aria-controls="coffee" tabindex="-1">
+							Coffee
+						</button>
+					</li>
+					<li>
+						<button role="tab" aria-controls="snacks" tabindex="-1">
+							Snacks
+						</button>
+					</li>
+				</ul>
+
+				<div class="menu-items">
+					<div role="tabpanel" data-selected="true" id="allmenus">
+						<article class="flex-row-center">
+							<img src="../images/menu_1.jpg" />
+							<div>
+								<h3>Item 1</h3>
+								<ul role="list">
+									<li>One</li>
+									<li>Two</li>
+									<li>Three</li>
+									<li>Four</li>
+									<li>Five</li>
+									<li>Six</li>
+									<li>Seven</li>
+									<li>Eight</li>
+									<li>Nine</li>
+								</ul>
+							</div>
+							<p>$20.00</p>
+						</article>
+						<article class="flex-row-center">
+							<img src="../images/menu_2.jpg" />
+							<div>
+								<h3>Item 2</h3>
+								<ul role="list">
+									<li>One</li>
+									<li>Two</li>
+									<li>Three</li>
+									<li>Four</li>
+									<li>Five</li>
+									<li>Six</li>
+									<li>Seven</li>
+									<li>Eight</li>
+									<li>Nine</li>
+								</ul>
+							</div>
+							<p>$20.00</p>
+						</article>
+						<article class="flex-row-center">
+							<img src="../images/menu_3.jpg" />
+							<div>
+								<h3>Item 3</h3>
+								<ul role="list">
+									<li>One</li>
+									<li>Two</li>
+									<li>Three</li>
+									<li>Four</li>
+									<li>Five</li>
+									<li>Six</li>
+									<li>Seven</li>
+									<li>Eight</li>
+									<li>Nine</li>
+								</ul>
+							</div>
+							<p>$20.00</p>
+						</article>
+					</div>
+
+					<div role="tabpanel" data-selected="false" id="breakfast">
+						<article class="flex-row-center">
+							<img src="../images/menu_2.jpg" />
+							<div>
+								<h3>Item 1</h3>
+								<ul role="list">
+									<li>One</li>
+									<li>Two</li>
+									<li>Three</li>
+									<li>Four</li>
+									<li>Five</li>
+									<li>Six</li>
+									<li>Seven</li>
+									<li>Eight</li>
+									<li>Nine</li>
+								</ul>
+							</div>
+							<p>$21.00</p>
+						</article>
+					</div>
+
+					<div role="tabpanel" data-selected="false" id="lunch">
+						<article class="flex-row-center">
+							<img src="../images/menu_3.jpg" />
+							<div>
+								<h3>Item 1</h3>
+								<ul role="list">
+									<li>One</li>
+									<li>Two</li>
+									<li>Three</li>
+									<li>Four</li>
+									<li>Five</li>
+									<li>Six</li>
+									<li>Seven</li>
+									<li>Eight</li>
+									<li>Nine</li>
+								</ul>
+							</div>
+							<p>$22.00</p>
+						</article>
+					</div>
+
+					<div role="tabpanel" data-selected="false" id="dinner">
+						<article class="flex-row-center">
+							<img src="../images/menu_4.jpg" />
+							<div>
+								<h3>Item 1</h3>
+								<ul role="list">
+									<li>One</li>
+									<li>Two</li>
+									<li>Three</li>
+									<li>Four</li>
+									<li>Five</li>
+									<li>Six</li>
+									<li>Seven</li>
+									<li>Eight</li>
+									<li>Nine</li>
+								</ul>
+							</div>
+							<p>$23.00</p>
+						</article>
+					</div>
+
+					<div role="tabpanel" data-selected="false" id="coffee">
+						<article class="flex-row-center">
+							<img src="../images/menu_5.jpg" />
+							<div>
+								<h3>Item 1</h3>
+								<ul role="list">
+									<li>One</li>
+									<li>Two</li>
+									<li>Three</li>
+									<li>Four</li>
+									<li>Five</li>
+									<li>Six</li>
+									<li>Seven</li>
+									<li>Eight</li>
+									<li>Nine</li>
+								</ul>
+							</div>
+							<p>$24.00</p>
+						</article>
+					</div>
+
+					<div role="tabpanel" data-selected="false" id="snacks">
+						<article class="flex-row-center">
+							<img src="../images/menu_6.jpg" />
+							<div>
+								<h3>Item 1</h3>
+								<ul role="list">
+									<li>One</li>
+									<li>Two</li>
+									<li>Three</li>
+									<li>Four</li>
+									<li>Five</li>
+									<li>Six</li>
+									<li>Seven</li>
+									<li>Eight</li>
+									<li>Nine</li>
+								</ul>
+							</div>
+							<p>$25.00</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section id="book-now" class="flex-column-center opaque-background">
+				<h2>BOOK A TABLE NOW !</h2>
+				<a href="#" class="action-link">BOOK NOW</a>
+			</section>
+
+			<section id="our-chefs" class="flex-column-center">
+				<h2>Our Chefs</h2>
+				<img src="../images/red seperator.png" />
+
+				<div class="chefs">
+					<article class="flow">
+						<img src="../images/team-1.jpg" />
+						<h3>Mark Angelia</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+					</article>
+					<article class="flow">
+						<img src="../images/team-2.jpg" />
+						<h3>Angel Meskat</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+					</article>
+					<article class="flow">
+						<img src="../images/team-3.jpg" />
+						<h3>Jon Doe</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+					</article>
+					<article class="flow">
+						<img src="../images/team-4.jpg" />
+						<h3>Angel Di Maria</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+					</article>
+					<article class="flow">
+						<img src="../images/team-5.jpg" />
+						<h3>Park Ji Sung</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+							eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+					</article>
+				</div>
+			</section>
+
+			<section id="latest-news" class="flex-column-center opaque-background">
+				<h2>Latest News</h2>
+				<img src="../images/red seperator.png" />
+
+				<div class="news-items">
+					<article>
+						<img src="../images/blog-1.jpg" />
+						<div class="flow card-content">
+							<h3>Restaurant welcome day meetup</h3>
+							<hr />
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+							<ul role="list">
+								<li>24 February, 2017</li>
+								<li aria-hidden="true">-</li>
+								<li>5 Comments</li>
+							</ul>
+						</div>
+					</article>
+					<article>
+						<img src="../images/blog-2.jpg" />
+						<div class="flow card-content">
+							<h3>Recieved first day first reservation</h3>
+							<hr />
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+							<ul role="list">
+								<li>24 February, 2017</li>
+								<li aria-hidden="true">-</li>
+								<li>5 Comments</li>
+							</ul>
+						</div>
+					</article>
+					<article>
+						<img src="../images/blog-3.jpg" />
+						<div class="flow card-content">
+							<h3>Home to get your home delivery</h3>
+							<hr />
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+							<ul role="list">
+								<li>24 February, 2017</li>
+								<li aria-hidden="true">-</li>
+								<li>5 Comments</li>
+							</ul>
+						</div>
+					</article>
+				</div>
+			</section>
+
+			<section class="flex-column-center" id="gallery">
+				<h2>Gallery</h2>
+				<img src="../images/blog-1.jpg" />
+			</section>
+		</main>
+
+		<footer id="primary-footer" class="opaque-background">
+			<div class="flex-column-center flow top">
+				<img src="./images/main_logo.png" />
+				<address>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+					eiusmod
+				</address>
+				<p class="highlight">hello@dawat.com</p>
+				<p class="highlight">+88 000 0000 1111</p>
+				<ul role="list" class="flex-row-center contact-links">
+					<li>
+						<a href="#"><img src="./images/icons/facebook.svg" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="./images/icons/twitter.svg" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="./images/icons/googleplus.svg" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="./images/icons/pinterest.svg" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="./images/icons/skype.svg" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="./images/icons/behance.svg" /></a>
+					</li>
+				</ul>
+			</div>
+
+			<hr />
+
+			<div class="bottom">
+				<ul role="list">
+					<li><a href="#">Terms of use</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Site Map</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+
+				<p>
+					&copy; 2017 <span class="highlight">Dawat Restaurant</span> All Rights
+					Reserved.
+				</p>
+			</div>
+			<div id="credits">
+				<p class="mlr-auto">
+					Icons by
+					<a href="https://freeicons.io/profile/823">Muhammad Haq</a> on
+					<a href="https://freeicons.io">freeicons.io</a>
+				</p>
+			</div>
+			<a href="#top" class="action-link top-link">&#8593;</a>
+		</footer>
+	</body>
+</html>
